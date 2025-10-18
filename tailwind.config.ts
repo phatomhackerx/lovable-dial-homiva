@@ -81,10 +81,11 @@ export default {
 			},
 			boxShadow: {
 				'card': 'var(--shadow-card)',
-				'elevated': 'var(--shadow-elevated)'
+				'elevated': 'var(--shadow-elevated)',
+				'input': 'var(--shadow-input)'
 			},
 			fontFamily: {
-				'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				'sans': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -27,29 +27,29 @@ export function MetricCard({
 
   return (
     <Card className={cn(
-      "p-6 bg-gradient-card border-border shadow-card",
+      "p-8",
       className
     )}>
-      <div className="flex items-start justify-between">
-        <div className="flex-1">
-          <p className="text-sm font-medium text-muted-foreground mb-2">
-            {title}
-          </p>
-          <div className="flex items-baseline gap-2">
-            <h3 className="text-3xl font-bold text-foreground">
-              {value}
-            </h3>
-            {change && (
-              <span className={cn("text-sm font-medium", changeColor)}>
-                {change}
-              </span>
-            )}
-          </div>
-        </div>
-        <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10">
-          <div className="text-primary">
+      <div className="flex items-start justify-between mb-4">
+        <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center flex-shrink-0">
+          <div className="text-foreground">
             {icon}
           </div>
+        </div>
+      </div>
+      <div>
+        <p className="text-sm text-muted-foreground mb-2">
+          {title}
+        </p>
+        <div className="flex items-baseline gap-3">
+          <h3 className="text-3xl font-bold text-foreground tracking-tight">
+            {value}
+          </h3>
+          {change && (
+            <span className={cn("text-sm font-semibold", changeColor)}>
+              {change}
+            </span>
+          )}
         </div>
       </div>
     </Card>
